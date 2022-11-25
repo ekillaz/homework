@@ -1,0 +1,28 @@
+№1
+
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        String arg[] = new String[10];
+        Scanner sc = new Scanner(System.in);
+        for(int i = 0; i<10; i++) arg[i] = sc.nextLine();
+        for(int i = 0; i<arg.length; i++) System.out.println(arg[i]);
+    }
+}
+
+№2
+
+public class Test {
+    public static void main(String[] args) {
+        int arg[] = new int[10];
+        int min = 10;
+        for(int i = 0; i<arg.length; i++) arg[i] = (int) ((Math.random()*10)+1);
+        for(int i = 0; i<arg.length; i++) {
+            System.out.println(arg[i]);
+            min = Math.min(min, arg[i]);
+        }
+        System.out.println("Minimal: " + min);
+
+    }
+}
